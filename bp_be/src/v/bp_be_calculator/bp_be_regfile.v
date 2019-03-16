@@ -96,7 +96,7 @@ bsg_mem_2r1w_sync
  #(.width_p(reg_data_width_lp)
    ,.els_p(rf_els_lp)
    ,.read_write_same_addr_p(1) // We can't actually read/write the same address, but this should 
-                               //   be taken care of by forwarding and otherwise the assertion is
+   ,.enable_clock_gating_p(1)    //   be taken care of by forwarding and otherwise the assertion is
                                //   annoying
    )
  rf

@@ -78,6 +78,7 @@ bp_tlb_cam
 bsg_mem_1rw_sync_synth
   #(.width_p(ptag_width_p)
     ,.els_p(els_p)
+    ,.enable_clock_gating_p(1)
   )
   ram
   (.clk_i(clk_i)
